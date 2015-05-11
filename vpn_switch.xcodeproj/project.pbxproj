@@ -15,6 +15,10 @@
 		FAC917551B01030B00470104 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC917541B01030B00470104 /* Images.xcassets */; };
 		FAC917581B01030B00470104 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC917561B01030B00470104 /* LaunchScreen.xib */; };
 		FAC917641B01030B00470104 /* vpn_switchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC917631B01030B00470104 /* vpn_switchTests.m */; };
+		FAC917741B01077300470104 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC917731B01077300470104 /* NotificationCenter.framework */; };
+		FAC9177A1B01077300470104 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC917791B01077300470104 /* TodayViewController.m */; };
+		FAC9177C1B01077300470104 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC9177B1B01077300470104 /* MainInterface.storyboard */; };
+		FAC917801B01077300470104 /* barbtn.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAC917711B01077300470104 /* barbtn.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +29,28 @@
 			remoteGlobalIDString = FAC917401B01030B00470104;
 			remoteInfo = vpn_switch;
 		};
+		FAC9177D1B01077300470104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC917391B01030B00470104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC917701B01077300470104;
+			remoteInfo = barbtn;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAC9177F1B01077300470104 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FAC917801B01077300470104 /* barbtn.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FAC917411B01030B00470104 /* vpn_switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vpn_switch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +67,12 @@
 		FAC9175D1B01030B00470104 /* vpn_switchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vpn_switchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC917621B01030B00470104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC917631B01030B00470104 /* vpn_switchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vpn_switchTests.m; sourceTree = "<group>"; };
+		FAC917711B01077300470104 /* barbtn.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = barbtn.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC917731B01077300470104 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FAC917771B01077300470104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC917781B01077300470104 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		FAC917791B01077300470104 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		FAC9177B1B01077300470104 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +90,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAC9176E1B01077300470104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC917741B01077300470104 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +106,8 @@
 			children = (
 				FAC917431B01030B00470104 /* vpn_switch */,
 				FAC917601B01030B00470104 /* vpn_switchTests */,
+				FAC917751B01077300470104 /* barbtn */,
+				FAC917721B01077300470104 /* Frameworks */,
 				FAC917421B01030B00470104 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +117,7 @@
 			children = (
 				FAC917411B01030B00470104 /* vpn_switch.app */,
 				FAC9175D1B01030B00470104 /* vpn_switchTests.xctest */,
+				FAC917711B01077300470104 /* barbtn.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +164,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FAC917721B01077300470104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC917731B01077300470104 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAC917751B01077300470104 /* barbtn */ = {
+			isa = PBXGroup;
+			children = (
+				FAC917781B01077300470104 /* TodayViewController.h */,
+				FAC917791B01077300470104 /* TodayViewController.m */,
+				FAC9177B1B01077300470104 /* MainInterface.storyboard */,
+				FAC917761B01077300470104 /* Supporting Files */,
+			);
+			path = barbtn;
+			sourceTree = "<group>";
+		};
+		FAC917761B01077300470104 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAC917771B01077300470104 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +201,12 @@
 				FAC9173D1B01030B00470104 /* Sources */,
 				FAC9173E1B01030B00470104 /* Frameworks */,
 				FAC9173F1B01030B00470104 /* Resources */,
+				FAC9177F1B01077300470104 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FAC9177E1B01077300470104 /* PBXTargetDependency */,
 			);
 			name = vpn_switch;
 			productName = vpn_switch;
@@ -160,6 +231,23 @@
 			productReference = FAC9175D1B01030B00470104 /* vpn_switchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FAC917701B01077300470104 /* barbtn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC917811B01077300470104 /* Build configuration list for PBXNativeTarget "barbtn" */;
+			buildPhases = (
+				FAC9176D1B01077300470104 /* Sources */,
+				FAC9176E1B01077300470104 /* Frameworks */,
+				FAC9176F1B01077300470104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = barbtn;
+			productName = barbtn;
+			productReference = FAC917711B01077300470104 /* barbtn.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +263,9 @@
 					FAC9175C1B01030B00470104 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = FAC917401B01030B00470104;
+					};
+					FAC917701B01077300470104 = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -193,6 +284,7 @@
 			targets = (
 				FAC917401B01030B00470104 /* vpn_switch */,
 				FAC9175C1B01030B00470104 /* vpn_switchTests */,
+				FAC917701B01077300470104 /* barbtn */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +304,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC9176F1B01077300470104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC9177C1B01077300470104 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +337,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAC9176D1B01077300470104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC9177A1B01077300470104 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -244,6 +352,11 @@
 			isa = PBXTargetDependency;
 			target = FAC917401B01030B00470104 /* vpn_switch */;
 			targetProxy = FAC9175E1B01030B00470104 /* PBXContainerItemProxy */;
+		};
+		FAC9177E1B01077300470104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC917701B01077300470104 /* barbtn */;
+			targetProxy = FAC9177D1B01077300470104 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +510,30 @@
 			};
 			name = Release;
 		};
+		FAC917821B01077300470104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = barbtn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FAC917831B01077300470104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = barbtn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +559,14 @@
 			buildConfigurations = (
 				FAC9176B1B01030B00470104 /* Debug */,
 				FAC9176C1B01030B00470104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAC917811B01077300470104 /* Build configuration list for PBXNativeTarget "barbtn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC917821B01077300470104 /* Debug */,
+				FAC917831B01077300470104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
